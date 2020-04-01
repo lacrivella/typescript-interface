@@ -1,3 +1,10 @@
+interface Villager {
+  name: string;
+  animal: string;
+  birthday: number;
+  town: boolean;
+}
+
 const antonio = {
   name: 'antonio',
   animal: 'anteater',
@@ -5,12 +12,7 @@ const antonio = {
   town: true
 };
 
-const printVillager = (villager: {
-  name: string;
-  animal: string;
-  birthday: number;
-  town: boolean;
-}): void => {
+const printVillager = (villager: Villager): void => {
   console.log(`Name: ${villager.name}`);
   console.log(`Animal: ${villager.animal}`);
   console.log(`Birthday: ${villager.birthday}`);
