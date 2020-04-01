@@ -12,8 +12,18 @@ const antonio = {
   }
 };
 
+const island = {
+  name: 'winden',
+  occupied: true,
+  people: 40,
+  summary(): string {
+    return `My island has ${this.people} people living on it.`;
+  }
+};
+
 const printSummary = (item: Reportable): void => {
   console.log(item.summary());
 };
 
 printSummary(antonio);
+printSummary(island);
