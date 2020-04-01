@@ -1,8 +1,4 @@
-interface Villager {
-  name: string;
-  animal: string;
-  birthday: Date;
-  town: boolean;
+interface Reportable {
   summary(): string;
 }
 
@@ -16,8 +12,8 @@ const antonio = {
   }
 };
 
-const printVillager = (villager: Villager): void => {
-  console.log(villager.summary());
+const printSummary = (item: Reportable): void => {
+  console.log(item.summary());
 };
 
-printVillager(antonio);
+printSummary(antonio);
