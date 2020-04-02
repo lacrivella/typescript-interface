@@ -1,21 +1,25 @@
 // parent class
 class Villager {
-  greeting(): void {
+  public greeting(): void {
     console.log('good morning');
   }
 
-  question(): void {
+  public question(): void {
     console.log('how are you?');
   }
 }
 
 // child class of Villager
 class Apollo extends Villager {
-  greeting(): void {
+  private greeting(): void {
     console.log('sup yo');
+  }
+
+  startGreetingProcess(): void {
+    this.greeting();
   }
 }
 
 const apollo = new Apollo();
-apollo.greeting();
+apollo.startGreetingProcess();
 apollo.question();

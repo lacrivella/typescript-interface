@@ -15,3 +15,10 @@ You can use a single interface to describe very different objects (see antonio a
 **classes**: blueprint to create an object with some fields (values) and methods (functions) to represent a 'thing'.
 
 We refer to Apollo as a child class to Villager because it is extending Villager. Apollo has all the methods that Villager has. We can overwrite those methods in our child class.
+
+**modifiers**: keywords placed on different methods and properties inside of a class. 
+  - **public**: this method can be called any where, any time. Public is the default.
+  - **private**: this method can only be called by *other methods* in *this* class
+  - **protected**: this method can be called by other methods in *this* class, or by other methods in child classes
+
+You canNOT change the modifier in an override method. It must match the parent's modifier for that method.
