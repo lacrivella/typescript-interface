@@ -22,3 +22,5 @@ We refer to Apollo as a child class to Villager because it is extending Villager
   - **protected**: this method can be called by other methods in *this* class, or by other methods in child classes
 
 You canNOT change the modifier in an override method. It must match the parent's modifier for that method.
+
+You mark a method as private so other developers can't use it later in the code. It's usually reserved for code that changes the class. It is not a security procedure.

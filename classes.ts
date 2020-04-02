@@ -1,10 +1,10 @@
 // parent class
 class Villager {
-  public greeting(): void {
-    console.log('good morning');
-  }
+  // public greeting(): void {
+  //   console.log('good morning');
+  // }
 
-  public question(): void {
+  protected question(): void {
     console.log('how are you?');
   }
 }
@@ -17,6 +17,7 @@ class Apollo extends Villager {
 
   startGreetingProcess(): void {
     this.greeting();
+    this.question();
   }
 }
 
