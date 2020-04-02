@@ -24,3 +24,7 @@ We refer to Apollo as a child class to Villager because it is extending Villager
 You canNOT change the modifier in an override method. It must match the parent's modifier for that method.
 
 You mark a method as private so other developers can't use it later in the code. It's usually reserved for code that changes the class. It is not a security procedure.
+
+**constructors**: method inside a class that is run once a new instance of that class is called.
+  - either you will initialize a property on the same line that you defined it OR,
+  - you're going to initialize it in the constructor
