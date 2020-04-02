@@ -1,10 +1,6 @@
 // parent class
 class Villager {
-  name: string;
-
-  constructor(name: string) {
-    this.name = name;
-  }
+  constructor(public name: string) {}
 
   protected question(): void {
     console.log('how are you?');
