@@ -13,3 +13,5 @@ You can use a single interface to describe very different objects (see antonio a
 ## Classes
 
 **classes**: blueprint to create an object with some fields (values) and methods (functions) to represent a 'thing'.
+
+We refer to Apollo as a child class to Villager because it is extending Villager. Apollo has all the methods that Villager has. We can overwrite those methods in our child class.

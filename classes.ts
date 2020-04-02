@@ -1,3 +1,4 @@
+// parent class
 class Villager {
   greeting(): void {
     console.log('good morning');
@@ -8,6 +9,13 @@ class Villager {
   }
 }
 
-const villager = new Villager();
-villager.greeting();
-villager.question();
+// child class of Villager
+class Apollo extends Villager {
+  greeting(): void {
+    console.log('sup yo');
+  }
+}
+
+const apollo = new Apollo();
+apollo.greeting();
+apollo.question();
