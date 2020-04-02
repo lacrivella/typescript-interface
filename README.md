@@ -10,3 +10,6 @@ You can use a single interface to describe very different objects (see antonio a
   - create functions that accept arguments that are typed with interfaces
   - Object/classes can decide to implement a given interface to work with a function
 
+## Classes
+
+**classes**: blueprint to create an object with some fields (values) and methods (functions) to represent a 'thing'.
