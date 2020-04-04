@@ -10,16 +10,19 @@ const villager = new Villager('tybalt');
 console.log(villager.name);
 
 // child class of Villager
-// class Apollo extends Villager {
-//   private greeting(): void {
-//     console.log('sup yo');
-//   }
+class Apollo extends Villager {
+  constructor(public birthday: number, color: string) {
+    super(color);
+  }
+  private greeting(): void {
+    console.log('sup yo');
+  }
 
-//   startGreetingProcess(): void {
-//     this.greeting();
-//     this.question();
-//   }
-// }
+  startGreetingProcess(): void {
+    this.greeting();
+    this.question();
+  }
+}
 
-// const apollo = new Apollo();
-// apollo.startGreetingProcess();
+const apollo = new Apollo(704, 'white and black');
+apollo.startGreetingProcess();
